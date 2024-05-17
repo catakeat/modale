@@ -13,6 +13,9 @@ Route::get('/test', function () {   //doar componenta
     return view('livewire.test');
 });
 
-Route::get("student",[App\Http\Controllers\StudentController::class,'index']);
+
+//Route::get("student",[App\Http\Controllers\StudentController::class,'index']);
+Route::get("student",App\Livewire\Student::class);
+
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
