@@ -1,5 +1,5 @@
 <div>
- 
+   
    <div>
     Sa scriu ceva aici
     <form wire:submit.prevent="saveStudent" action="#" method="post">
@@ -32,5 +32,5 @@
 
 
 </div>
-    
+
 </div>
