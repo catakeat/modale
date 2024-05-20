@@ -16,7 +16,7 @@
         @yield('content')
 
 
-        Slot content goes here
+        Slot content goes here<-- din app.blade
      
 
 

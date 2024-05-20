@@ -2,17 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Test;
-
+use App\Livewire\ContactForm;
 
 Route::get('/', function () {
     return view('student.index');
 });
 
-Route::get("test1",Test::class );//  cu tot cu templatwe , doar asa merge bine
+Route::get("test1",Test::class );//  cu tot cu template , doar asa merge bine
 Route::get('/test', function () {   //doar componenta
     return view('livewire.test');
 });
-
+Route::get('contact',ContactForm::class);
 
 //Route::get("student",[App\Http\Controllers\StudentController::class,'index']);
 Route::get("student",App\Livewire\Student::class);
