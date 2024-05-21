@@ -85,7 +85,7 @@ class Student extends Component
     public function render()
     {
         
-        if($this->search===""){
+        if($this->search==""){
             $students = \App\Models\Student::paginate(2); //->get();//::all();
         }else{
             dd($this->search);
@@ -93,8 +93,6 @@ class Student extends Component
             //dd($students);
         }
     
-        //dd($students);
-        // $this->students = $students;
         return view('livewire.student', ['students' => $students])->extends('student.index');
     }
 }
