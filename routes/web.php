@@ -16,6 +16,6 @@ Route::get('contact',ContactForm::class);
 
 //Route::get("student",[App\Http\Controllers\StudentController::class,'index']);
 Route::get("student",App\Livewire\Student::class);
-
-
+Route::get('contact',[App\Http\Controllers\StudentController::class, 'contact'])->name('contact');
+Route::get('userform', [App\Http\Controllers\StudentController::class, 'userform'])->name('userform');
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

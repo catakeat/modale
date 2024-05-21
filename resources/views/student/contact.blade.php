@@ -1,9 +1,6 @@
 @extends("components.layouts.app")
 @section("content")
 <div>
-    <livewire:student>asta a(vine din index)</livewire:student>
+    <livewire:contactform>asta a(vine din index)</livewire:contactform>
 </div>
-index 
-
-
 @endsection("content")

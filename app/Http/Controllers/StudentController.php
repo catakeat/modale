@@ -10,4 +10,12 @@ class StudentController extends Controller
     {
         return view('student.index');
     }
+    
+    function contact(){
+
+        return view('student.contact');
+    }
+    function userform(){
+        return view('student.userform');
+    }
 }
