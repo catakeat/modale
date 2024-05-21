@@ -1,5 +1,5 @@
 <div>
-  <input type="text"  wire:click="test">
+  <input type="text"  wire:model="search"> <div style="color:green"> Green {{$search}}  </div>
   Sa scriu ceva aici <-- din stundent.blade
    @if(session()->has("message"))
 
@@ -17,8 +17,8 @@
       @forelse($students as $student)
       <tr>
         <td>{{$student->id}} loop_iteration {{$loop->iteration}} loop_index{{$loop->index}}</td>
-        <td>{{$student->name}}</tdi>
         <td>{{$student->name}}</td>
+        <td>{{$student->email}}</td>
         <td>{{$student->course}}</td>
         <td>
         

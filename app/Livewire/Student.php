@@ -15,7 +15,7 @@ class Student extends Component
     public $email;
     public $course;
     public $student_id;
-    public $search;
+    public $search="";
 
     protected $rules = [
         'name' => 'required|min:4',
@@ -42,9 +42,7 @@ class Student extends Component
     public function saveStudent()
     {
         $data = $this->validate();
-        //dd($data);
-
-        //dd($data);
+       
         \App\Models\Student::create($data);
         $this->dispatch('close-modal');
         session()->flash("message", "Am adaugat un student");
@@ -87,7 +85,7 @@ class Student extends Component
     public function render()
     {
         
-        if($this->search==""){
+        if($this->search===""){
             $students = \App\Models\Student::paginate(2); //->get();//::all();
         }else{
             dd($this->search);
